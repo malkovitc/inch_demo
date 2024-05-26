@@ -1,0 +1,25 @@
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="submit()" class="form">
+        <tui-input
+            tuiHintDirection="bottom-right"
+            [tuiTextfieldCleaner]="true"
+            tuiTextfieldIconLeft="tuiIconSearchLarge"
+            formControlName="address"
+        >
+            address
+
+            <input placeholder="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045" tuiTextfield />
+        </tui-input>
+        <button type="submit" [disabled]="form.invalid" tuiButton>Explore</button>
+    </form>
+</div>
+
+<!-- <ng-template #loader3>
+    <tui-loader
+        size="s"
+        [inheritColor]="true"
+        [showLoader]="false"
+        [style.height.px]="30"
+        [style.width.px]="30"
+    ></tui-loader>
+</ng-template> -->
