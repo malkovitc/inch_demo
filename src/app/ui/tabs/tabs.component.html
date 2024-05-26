@@ -1,0 +1,11 @@
+<div class="container">
+    <tui-tabs [(activeItemIndex)]="activeItemIndex">
+        @for (step of steps; track step) {
+            <ng-container>
+                <button tuiTab class="step" (click)="selectTab(step)">
+                    {{ step }}
+                </button>
+            </ng-container>
+        }
+    </tui-tabs>
+</div>
